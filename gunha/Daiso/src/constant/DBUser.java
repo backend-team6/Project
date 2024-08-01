@@ -1,4 +1,4 @@
-package product.constant;
+package constant;
 
 public enum DBUser {
     ROOT("jdbc:mysql://127.0.0.1:3306/daiso", "root", "1234");

@@ -1,7 +1,7 @@
 package product.manager;
 
 import product.domain.Product;
-import product.util.DBUtil;
+import util.DBUtil;
 
 import java.sql.*;
 import java.util.ArrayList;

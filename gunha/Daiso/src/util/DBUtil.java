@@ -1,6 +1,6 @@
-package product.util;
+package util;
 
-import product.constant.DBUser;
+import constant.DBUser;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
