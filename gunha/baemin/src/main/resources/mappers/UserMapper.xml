@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="programmers.baemin.user.repository.UserMapper">
+    <select id="findByLoginIdAndPassword" resultType="programmers.baemin.user.domain.User">
+        select id, login_id, password
+        from user
+        where login_id=#{loginId} and password=#{password}
+    </select>
+
+    <select id="findById" resultType="String">
+        select login_id
+        from user
+        where login_id=#{loginId}
+    </select>
+
+    <insert id="register" useGeneratedKeys="true" keyProperty="id">
+        insert into user (login_id, password)
+        values (#{loginId}, #{password})
+    </insert>
+</mapper>
